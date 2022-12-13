@@ -1,0 +1,342 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+*,
+*::after,
+*::before{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover{
+    text-decoration: none;
+}
+
+ol, ul{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+=======================
+variables 
+=======================
+ */
+:root{
+    --primary-color: #ffc222;
+    --secondary-color: #00a149;
+    --while-color: #fff;
+    --text-color: #b0b0b0;
+    --black-color: #1e1d23;
+    --primary-font: 'Roboto', 'sans-serif';
+    --secondary-font: 'Quicksand', 'sans-serif'
+}
+
+/* color: var(--primary- color) */
+a{
+   color: var(--black-color);
+}
+a:hover{
+    color: var(--primary-color) !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    /* font-weight: 400; */
+}
+
+
+/* 
+===================
+custom scroll bar 
+===================
+ */
+
+ ::-webkit-scrollbar{
+    width: 0.625rem;
+ }
+ ::-webkit-scrollbar-track{
+    background: var(--primary-color);
+ }
+ ::-webkit-scrollbar-thumb{
+    background: var(--secondary-color);
+    border-radius: 10px;
+ }
+ ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+ /* 
+===================
+custom design 
+===================
+ */
+
+ h1{
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: var(--while-color);
+    text-shadow: 1px 0 6px #000;
+ }
+ h2{
+   font-size: 40px;
+   font-weight: 500;
+   color: var(--secondary-color);
+   text-shadow: 1px 0 2px var(--secondary-color);
+   letter-spacing: 2px;
+   line-height: 40px;
+ }
+
+ h5{
+   font-weight: 700;
+   font-family: var(--secondary-font);
+ }
+ p{
+   line-height: 23px;
+   text-shadow: 1px 0x 3px var(--black-color);
+ }
+
+
+ h1 span {
+    color:  var(--primary-color);
+ }
+
+ .main-btn{
+    /* border: 1px solid var(--secondary-color); */
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    transition: all 0.3s ease-in;
+    padding-left:  30px;
+    padding-right:  30px;
+ }
+ .main-btn:hover{
+    background-color: var(--secondary-color) !important;
+    color: var(--primary-color) !important;
+ }
+
+ .wrapper{
+    padding-top: 4.25rem;
+    padding-bottom: 2.25rem;
+ }
+
+
+
+  /* 
+===================
+heading customize
+===================
+ */
+ .navigation-wrap{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+ }
+ .navigation-wrap .nav-item{
+   padding-right: 10px;
+ }
+ .navigation-wrap  .nav-link{
+    padding: 10px 15px;
+    color: var(--while-color);
+ }
+.active{
+  color: var(--primary-color) !important;
+}
+
+   /* 
+===================
+Navbar styling on scroll
+===================
+ */
+.scroll{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: var(--while-color);
+   box-shadow: 0 0.12rem 1.7rem 0 rgb(34, 31, 31);
+   transition: all 0.12s ease-in-out 0s;
+   z-index: 10;
+ }
+.scroll .nav-link{
+   color: var(--black-color);
+ }
+.scroll .nav-link:hover,
+.scroll .nav-link.active{
+   color: var(--primary-color);
+ }
+
+
+
+
+ 
+   /* 
+===================
+top banner 
+===================
+ */
+
+ .top-banner{
+   width: 100%;
+   background: url('../assert/bg/bg-1.jpg') no-repeat center;
+   background-size: cover;
+   padding: 10rem 0 9rem;
+   /* margin-top: -100px; */
+ }
+ .top-banner span{
+   color: var(--primary-color);
+ }
+
+
+
+   /* 
+===================
+our services   our-menu
+===================
+ */
+ .rekha{
+   width: 100px;
+   height: 2px;
+   background-color:var(--primary-color);
+   display: inline-block;
+ }
+
+#our-menu .card {
+   border: 1px solid var(--while-color);
+}
+#our-menu .card:hover {
+   border: 1px solid var(--primary-color);
+}
+
+
+
+/* 
+===================
+custom scroll bar 
+===================
+ */
+
+ .about{
+   background: var(--black-color);
+   color: var(--while-color);
+ }
+ .about ul li{
+   font-size: 15px;
+   font-weight: 900;
+   letter-spacing: 0.8px;
+   text-transform: capitalize;
+   color: var(--secondary-color);
+ }
+ .about ul li .fa-check{
+   color: var(--primary-color);
+   font-size: large;
+   font-weight: 900;
+ }
+
+
+
+/* 
+===================
+Explore option 
+===================
+ */
+ .card-h5{
+  color: var(--secondary-color);
+  text-transform: capitalize;
+ }
+ .card{
+  
+ }
+
+ #explore .card:hover{
+  box-shadow: 1px 1px 7px var(--primary-color);
+  border-color: var(--secondary-color);
+
+ }
+
+
+
+ /* 
+===================
+Testemonial section
+===================
+ */
+
+ .testemonial{
+  background-color: var(--secondary-color);
+
+ }
+
+ .carousel-item {
+  padding: 10rem 3rem;
+  background-color: var(--black-color);
+  margin-top: 3rem;
+  border-radius: 3rem;
+ }
+
+ .carousel-caption img{
+  max-width: 5rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+ }
+
+ .carousel-indicators{
+  bottom: -3.5rem;
+ } 
+ .carousel-indicators button{
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50%;
+ }
+
+
+
+
+  /* 
+===================
+footer section
+===================
+ */
+
+ .footer{
+  background-color: var(--black-color);
+  color: var(--while-color);
+ }
+
+ .footer .copyright{
+  text-transform: capitalize;
+ }
+ .footer .copyright b{
+  color: var(--primary-color);
+ }
+ .footer .copyright{
+  margin-bottom: -30px;
+  font-size: 15px;
+
+ }
+
+ .footer-icon i{
+  font-size: 24px;
+  padding: 6px 5px 0 ;
+ } 
+ .footer-icon i:hover{
+  color: var(--primary-color);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+ }

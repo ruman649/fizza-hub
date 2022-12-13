@@ -1,0 +1,36 @@
+@media (max-width: 991px){
+    .navigation-wrap img{
+        height: 3.5rem;
+    }
+    .navigation-wrap{
+        background-color: var(--while-color);
+        /* padding-bottom: 10px; */
+    }
+    .navigation-wrap .nav-link{
+        color: var(--black-color);
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .about p,
+    .lead{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px){
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.3rem;
+        line-height: 20px;
+    }
+    .main-btn{
+        padding: 5px 10px;
+    }
+}
