@@ -10,6 +10,7 @@ window.onscroll = function(){
 }
 
 
+
 // nav hide on click 
 let navbar = document.querySelectorAll('.nav-link');
 let navCollapse = document.querySelector('.navbar-collapse.collapse');
